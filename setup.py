@@ -12,7 +12,7 @@ setup(name='django-simple-feedback',
 	author='Seán Hayes',
 	author_email='sean@seanhayes.name',
 	classifiers=[
-		"Development Status :: 3 - Alpha",
+		"Development Status :: 5 - Production/Stable",
 		"Framework :: Django",
 		"Intended Audience :: Developers",
 		"License :: OSI Approved :: GNU General Public License (GPL)",
