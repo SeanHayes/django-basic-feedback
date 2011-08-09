@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-import django_simple_feedback
+import django_basic_feedback
 
-package_name = 'django_simple_feedback'
+package_name = 'django_basic_feedback'
 
-setup(name='django-simple-feedback',
-	version=django_simple_feedback.__version__,
+setup(name='django-basic-feedback',
+	version=django_basic_feedback.__version__,
 	description="Provides a Feedback button on your pages and lets you view feedback via Django's admin site. Requires jQuery.",
 	author='Seán Hayes',
 	author_email='sean@seanhayes.name',
@@ -24,12 +24,12 @@ setup(name='django-simple-feedback',
 		"Topic :: Software Development :: Libraries",
 		"Topic :: Software Development :: Libraries :: Python Modules"
 	],
-	keywords='django blog',
+	keywords='django feedback widget',
 	url='http://seanhayes.name/',
-	download_url='https://github.com/SeanHayes/django-simple-feedback',
+	download_url='https://github.com/SeanHayes/django-basic-feedback',
 	license='BSD',
 	packages=[
-		'django_simple_feedback',
+		'django_basic_feedback',
 	],
 	include_package_data=True,
 	install_requires=['Django>=1.3',],

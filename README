@@ -1,7 +1,7 @@
 = Install =
-1. Add 'django_simple_feedback' to INSTALLED_APPS.
+1. Add 'django_basic_feedback' to INSTALLED_APPS.
 
-2. Add '(r'^feedback/', include('django_simple_feedback.urls')),' to your root URL conf.
+2. Add '(r'^feedback/', include('django_basic_feedback.urls')),' to your root URL conf.
 
 3. Put the following in your template's <head> tag (need to run './manage.py collectstatic'):
 	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}feedback.css" />
@@ -10,3 +10,5 @@
 4. Put the following in the body of your template:
 	{% load feedback_widget %}
 	{% feedback_widget %}
+
+5. Run './manager.py syncdb'.

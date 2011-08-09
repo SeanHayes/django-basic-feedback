@@ -3,6 +3,6 @@
 
 from django.conf.urls.defaults import *
 
-urlpatterns = patterns('django_simple_feedback.views',
+urlpatterns = patterns('django_basic_feedback.views',
 	url(r'^$', 'add', name="feedback"),
 )
