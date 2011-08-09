@@ -1,0 +1,45 @@
+#feedback_widget
+{
+	position: fixed;
+	left: 0;
+	top: 10px;
+	z-index: 100;
+}
+#feedback_tab
+{
+	display: block;
+	width: 115px;
+	height: 115px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#feedback_tab button
+{
+	height: 30px;
+	width: 95px;
+	padding-top: 3px;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 3px solid #333333;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #cccccc;
+}
+#feedback_tab button:hover
+{
+	background-color: #888888;
+}
+
+#feedback_panel
+{
+	display: none;
+	background-color: #cccccc;
+	padding: 10px;
+}
+#feedback_panel p label, #feedback_panel p textarea{
+	vertical-align: top;
+}
