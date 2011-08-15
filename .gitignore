@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+.settings/
+*.pid
+*.log
+*.db
+.pydevproject
+.project
+*~
+dist/
+*.egg-info/
