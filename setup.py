@@ -30,8 +30,13 @@ setup(name='django-basic-feedback',
 	license='BSD',
 	packages=[
 		'django_basic_feedback',
+		'django_basic_feedback.templatetags',
+		'django_basic_feedback.tests',
 	],
-	package_data={'django_basic_feedback': ['django_basic_feedback/templates/feedback/*']},
+	package_data={'django_basic_feedback': [
+		'django_basic_feedback/templates/feedback/*',
+		'django_basic_feedback/static/*',
+	]},
 	include_package_data=True,
 	install_requires=['Django>=1.3',],
 )
