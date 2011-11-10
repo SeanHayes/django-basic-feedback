@@ -31,6 +31,7 @@ setup(name='django-basic-feedback',
 	packages=[
 		'django_basic_feedback',
 	],
+	package_data={'django_basic_feedback': ['django_basic_feedback/templates/feedback/*']},
 	include_package_data=True,
 	install_requires=['Django>=1.3',],
 )
