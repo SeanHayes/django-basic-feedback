@@ -5,6 +5,7 @@ from setuptools import setup
 import django_basic_feedback
 
 package_name = 'django_basic_feedback'
+test_package_name = '%s_test_project' % package_name
 
 setup(name='django-basic-feedback',
 	version=django_basic_feedback.__version__,
@@ -32,6 +33,7 @@ setup(name='django-basic-feedback',
 		'django_basic_feedback',
 		'django_basic_feedback.templatetags',
 		'django_basic_feedback.tests',
+		'django_basic_feedback_test_project',
 	],
 	package_data={'django_basic_feedback': [
 		'django_basic_feedback/templates/feedback/*',
@@ -39,5 +41,6 @@ setup(name='django-basic-feedback',
 	]},
 	include_package_data=True,
 	install_requires=['Django>=1.3',],
+    test_suite = '%s.runtests.runtests' % test_package_name,
 )
 
