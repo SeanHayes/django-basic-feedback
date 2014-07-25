@@ -40,7 +40,7 @@ setup(name='django-basic-feedback',
 		'django_basic_feedback/static/*',
 	]},
 	include_package_data=True,
-	install_requires=['Django>=1.3',],
+	install_requires=['Django>=1.6',],
     test_suite = '%s.runtests.runtests' % test_package_name,
 )
 
