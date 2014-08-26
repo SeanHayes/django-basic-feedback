@@ -6,6 +6,8 @@ try:
 except ImportError: 
     from django.conf.urls.defaults import *
 
-urlpatterns = patterns('django_basic_feedback.views',
-	url(r'^$', 'add', name="feedback"),
+from django_basic_feedback.views import add
+
+urlpatterns = patterns('',
+    url(r'^$', add, name="feedback"),
 )

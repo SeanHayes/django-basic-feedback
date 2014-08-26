@@ -11,7 +11,7 @@ register = template.Library()
 
 @register.inclusion_tag('feedback/widget.html', takes_context=True)
 def feedback_widget(context):
-	return {
-		'user': context['user'],
-		'form': FeedbackForm()
-	}
+    return {
+        'user': context['user'],
+        'form': FeedbackForm()
+    }

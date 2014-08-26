@@ -7,9 +7,9 @@
 from django.test import TestCase
 
 #Test imports
-from test_urls import *
+from .test_urls import *
 
 __test__ = {
-	'test_urls': [test_urls],
+    'test_urls': [test_urls],
 }
 

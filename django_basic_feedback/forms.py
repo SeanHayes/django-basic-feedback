@@ -5,9 +5,9 @@
 from django import forms
 
 #App imports
-from models import Feedback
+from .models import Feedback
 
 class FeedbackForm(forms.ModelForm):
-	class Meta:
-		model = Feedback
-		fields = ('text',)
+    class Meta:
+        model = Feedback
+        fields = ('text',)
